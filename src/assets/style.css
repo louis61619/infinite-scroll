@@ -1,0 +1,33 @@
+.list-item {
+  height: 140px;
+  overflow: hidden;
+  border-bottom: 1px solid rgb(202, 202, 202);
+  padding: 0 16px;
+}
+
+.list-item-title {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.list-item-excerpt {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: rgb(92, 92, 92);
+}
+
+.scroll-container {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+
+.scroll-height {
+  /* position: absolute; */
+  /* top: 0;
+  left: 0;
+  right: 0; */
+}
