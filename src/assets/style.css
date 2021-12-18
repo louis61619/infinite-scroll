@@ -1,3 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  height: 100%;
+}
+
+.App {
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
 .list-item {
   height: 140px;
   overflow: hidden;
@@ -23,11 +44,4 @@
   overflow-x: hidden;
   overflow-y: auto;
   position: relative;
-}
-
-.scroll-height {
-  /* position: absolute; */
-  /* top: 0;
-  left: 0;
-  right: 0; */
 }

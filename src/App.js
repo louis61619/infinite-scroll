@@ -1,6 +1,4 @@
 import Home from './pages/Home'
-import './App.css'
-import './assets/style.css'
 
 function App() {
   return (
