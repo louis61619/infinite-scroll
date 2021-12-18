@@ -1,0 +1,2 @@
+*{box-sizing:border-box}body,html{margin:0}#root,.App,body,html{height:100%}.App{display:flex;margin:0 auto;max-width:1200px}.list-item{border-bottom:1px solid #cacaca;height:140px;overflow:hidden;padding:0 16px}.list-item-excerpt,.list-item-title{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.list-item-excerpt{color:#5c5c5c}.scroll-container{height:100%;overflow-x:hidden;overflow-y:auto;position:relative}
+/*# sourceMappingURL=main.96948f31.css.map*/
