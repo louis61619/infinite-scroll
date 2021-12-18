@@ -1,5 +1,6 @@
 {
   "name": "infinite-scroll",
+  "homepage": "https://louis61619.github.io/infinite-scroll",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

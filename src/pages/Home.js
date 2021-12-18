@@ -1,6 +1,5 @@
 import React, { useEffect, useState, useCallback, useRef } from 'react'
 import { getList } from '../service/list'
-import ListItem from '../components/ListItem'
 import ScrollList from '../components/ScrollList'
 
 const Home = () => {
@@ -15,7 +14,6 @@ const Home = () => {
       getList(lastId.current).then((res) => {
         if (res.length) {
           if (lastId.current === res[res.length - 1].id) {
-            alert('沒有更多')
             noMore.current = true
             return
           }
@@ -35,14 +33,7 @@ const Home = () => {
     getPostList()
   }, [getPostList])
 
-  return (
-    <ScrollList handleSrcollBottom={getPostList} itemHeight={140} list={list}>
-      {/* {list.map((item, index) => {
-        return <ListItem key={index} {...item}></ListItem>
-      })} */}
-      {(item) => <ListItem key={item.id} {...item}></ListItem>}
-    </ScrollList>
-  )
+  return <ScrollList handleSrcollBottom={getPostList} itemHeight={140} list={list}></ScrollList>
 }
 
 export default Home

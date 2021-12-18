@@ -48,7 +48,7 @@ const ScrollList = ({ handleSrcollBottom, delay = 500, list, itemHeight }) => {
     }, 50)
 
     // 獲取列表
-    if (scrollTop + clientHeight === scrollHeight) {
+    if (scrollTop + clientHeight + itemHeight * 5 >= scrollHeight) {
       clearTimeout(timer.current)
       timer.current = setTimeout(() => {
         handleSrcollBottom && handleSrcollBottom()
